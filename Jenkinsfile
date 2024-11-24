@@ -29,6 +29,7 @@ pipeline {
         stage("Deploy"){
             steps{
              sh "docker run -d -p 8000:8000 aniketgirigoud/spcl-project:latest"
+                echo "Container running succesfull"
             }
         }
     }
